@@ -1846,3 +1846,61 @@
 2025-06-05 16:46:04,977 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
 2025-06-05 16:46:04,978 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
 2025-06-05 16:46:04,979 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:46:05,284 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:46:07,285 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:46:17,301 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:46:17,301 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:46:23,917 DEBUG   SenderThread:512648 [sender.py:send():302] send: stats
+2025-06-05 16:46:25,838 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:46:25,839 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:46:25,839 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:46:25,840 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:46:26,293 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:46:27,293 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:46:32,516 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:46:32,517 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:46:46,331 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:46:46,332 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:46:46,332 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:46:46,333 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:46:47,301 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:46:47,302 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:46:47,840 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:46:47,840 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:46:54,199 DEBUG   SenderThread:512648 [sender.py:send():302] send: stats
+2025-06-05 16:47:03,095 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:47:03,095 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:47:07,092 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:47:07,093 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:47:07,094 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:47:07,094 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:47:07,309 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:47:09,310 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:47:18,302 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:47:18,302 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:47:24,496 DEBUG   SenderThread:512648 [sender.py:send():302] send: stats
+2025-06-05 16:47:28,641 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:47:28,642 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:47:28,642 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:47:28,643 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:47:29,318 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:47:29,318 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:47:33,534 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:47:33,534 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:47:48,834 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:47:48,834 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:47:49,329 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:47:49,331 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:47:49,331 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:47:49,332 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:47:50,326 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:47:51,327 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log
+2025-06-05 16:47:54,777 DEBUG   SenderThread:512648 [sender.py:send():302] send: stats
+2025-06-05 16:48:04,032 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-05 16:48:04,032 DEBUG   SenderThread:512648 [sender.py:send_request():316] send_request: stop_status
+2025-06-05 16:48:09,983 DEBUG   HandlerThread:512648 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-05 16:48:09,984 DEBUG   SenderThread:512648 [sender.py:send():302] send: history
+2025-06-05 16:48:09,985 DEBUG   SenderThread:512648 [sender.py:send():302] send: summary
+2025-06-05 16:48:09,985 INFO    SenderThread:512648 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-05 16:48:10,335 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/wandb-summary.json
+2025-06-05 16:48:11,335 INFO    Thread-12 :512648 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence/wandb/run-20250605_154117-gf8nyddh/files/output.log

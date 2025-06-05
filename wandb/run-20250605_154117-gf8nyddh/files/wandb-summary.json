@@ -1,1 +1,1 @@
-{"episode/collective_reward": 741.0, "episode/length": 100, "episode/influence_weight": 0.0, "episode/number": 195, "train/loss": 476.0232650756836, "_timestamp": 1749138343.9441054, "_runtime": 3866.868785381317, "_step": 196000}
+{"episode/collective_reward": 695.0, "episode/length": 100, "episode/influence_weight": 0.0, "episode/number": 201, "train/loss": 503.62010192871094, "_timestamp": 1749138469.3276572, "_runtime": 3992.252337217331, "_step": 202000}
