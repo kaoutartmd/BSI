@@ -1,0 +1,1 @@
+{"episode/collective_reward": 650.0, "episode/influence_weight": 0.0, "train/loss": 257.3692543029785, "_timestamp": 1749360651.8185089, "_runtime": 153738.91802287102, "_step": 10000000, "final/collective_reward": 752.807, "final/convergence_episode": 0, "_wandb": {"runtime": 153737}}

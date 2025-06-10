@@ -155,9 +155,7 @@ class ExperimentRunner:
             if self.use_wandb:
                 log_data = {
                     'episode/collective_reward': reward,
-                    'episode/length': episode_length,
                     'episode/influence_weight': model.get_current_influence_weight(),
-                    'episode/number': episode
                 }
                 
                 # Add training metrics if available

@@ -24,3 +24,4 @@ config: {'environment': 'harvest', 'num_agents': 5, 'num_episodes': 10000, 'seed
 2025-06-05 15:41:19,518 INFO    MainThread:512629 [wandb_run.py:_redirect():1884] Wrapping output streams.
 2025-06-05 15:41:19,518 INFO    MainThread:512629 [wandb_run.py:_redirect():1906] Redirects installed.
 2025-06-05 15:41:19,519 INFO    MainThread:512629 [wandb_init.py:init():732] run started, returning control to user process
+2025-06-05 20:21:53,064 WARNING MsgRouterThr:512629 [router.py:message_loop():76] message_loop has been closed

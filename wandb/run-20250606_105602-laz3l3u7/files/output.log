@@ -1,0 +1,220 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Training standard_a3c:   2%|█▌                                                                             | 192/10000 [45:28<38:42:39, 14.21s/it, avg_reward=654.64, influence_w=0.000]
+Traceback (most recent call last):
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/home/kaou-internship/basic_influence/train.py", line 191, in <module>
+    main()
+  File "/home/kaou-internship/basic_influence/train.py", line 170, in main
+    exp_dir = run_experiments('harvest', args)
+  File "/home/kaou-internship/basic_influence/train.py", line 125, in run_experiments
+    results = runner.run_all_experiments()
+  File "/home/kaou-internship/basic_influence/experiments/runner.py", line 274, in run_all_experiments
+    results = self.run_single_experiment(config, seed)
+  File "/home/kaou-internship/basic_influence/experiments/runner.py", line 147, in run_single_experiment
+    reward = model.train_episode()
+  File "/home/kaou-internship/basic_influence/models/influence_a3c.py", line 173, in train_episode
+    self.train_on_episode(experiences)
+  File "/home/kaou-internship/basic_influence/models/influence_a3c.py", line 235, in train_on_episode
+    total_loss.backward()
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
