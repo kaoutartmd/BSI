@@ -1,0 +1,209 @@
+2025-06-10 15:32:25,449 INFO    StreamThr :1073050 [internal.py:wandb_internal():90] W&B internal server running at pid: 1073050, started at: 2025-06-10 15:32:25.448252
+2025-06-10 15:32:25,451 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: status
+2025-06-10 15:32:25,454 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: status
+2025-06-10 15:32:25,456 DEBUG   SenderThread:1073050 [sender.py:send():302] send: header
+2025-06-10 15:32:25,456 INFO    WriterThread:1073050 [datastore.py:open_for_write():75] open: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/run-evpw2y5z.wandb
+2025-06-10 15:32:25,480 DEBUG   SenderThread:1073050 [sender.py:send():302] send: run
+2025-06-10 15:32:25,961 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: check_version
+2025-06-10 15:32:25,962 INFO    SenderThread:1073050 [dir_watcher.py:__init__():216] watching files in: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files
+2025-06-10 15:32:25,962 INFO    SenderThread:1073050 [sender.py:_start_run_threads():913] run started: evpw2y5z with start time 1749565945.440667
+2025-06-10 15:32:25,962 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:32:25,962 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:32:25,963 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: check_version
+2025-06-10 15:32:26,230 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: run_start
+2025-06-10 15:32:26,246 DEBUG   HandlerThread:1073050 [meta.py:__init__():35] meta init
+2025-06-10 15:32:26,246 DEBUG   HandlerThread:1073050 [meta.py:__init__():50] meta init done
+2025-06-10 15:32:26,246 DEBUG   HandlerThread:1073050 [meta.py:probe():216] probe
+2025-06-10 15:32:26,262 DEBUG   HandlerThread:1073050 [meta.py:_setup_git():206] setup git
+2025-06-10 15:32:26,286 DEBUG   HandlerThread:1073050 [meta.py:_setup_git():213] setup git done
+2025-06-10 15:32:26,287 DEBUG   HandlerThread:1073050 [meta.py:_save_pip():54] save pip
+2025-06-10 15:32:26,287 DEBUG   HandlerThread:1073050 [meta.py:_save_pip():68] save pip done
+2025-06-10 15:32:26,287 DEBUG   HandlerThread:1073050 [meta.py:_save_conda():75] save conda
+2025-06-10 15:32:26,965 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_created():275] file/dir created: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/conda-environment.yaml
+2025-06-10 15:32:26,966 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_created():275] file/dir created: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:32:26,966 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_created():275] file/dir created: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/requirements.txt
+2025-06-10 15:32:27,906 DEBUG   HandlerThread:1073050 [meta.py:_save_conda():85] save conda done
+2025-06-10 15:32:27,906 DEBUG   HandlerThread:1073050 [meta.py:probe():254] probe done
+2025-06-10 15:32:27,913 DEBUG   SenderThread:1073050 [sender.py:send():302] send: files
+2025-06-10 15:32:27,913 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2025-06-10 15:32:27,924 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:32:27,924 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:32:27,965 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/conda-environment.yaml
+2025-06-10 15:32:27,965 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_created():275] file/dir created: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-metadata.json
+2025-06-10 15:32:28,221 DEBUG   SenderThread:1073050 [sender.py:send():302] send: telemetry
+2025-06-10 15:32:28,490 INFO    Thread-16 :1073050 [upload_job.py:push():138] Uploaded file /tmp/tmp2585_jgvwandb/hsm8vo8f-wandb-metadata.json
+2025-06-10 15:32:28,963 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_created():275] file/dir created: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:32:30,964 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:32:43,224 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:32:43,224 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:32:54,530 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:32:55,978 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/config.yaml
+2025-06-10 15:32:58,466 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:32:58,466 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:33:02,714 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-10 15:33:04,981 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:33:13,704 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:33:13,704 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:33:24,738 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:33:28,980 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:33:28,980 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:33:34,989 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-10 15:33:34,990 DEBUG   SenderThread:1073050 [sender.py:send():302] send: history
+2025-06-10 15:33:34,990 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:33:34,992 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:33:34,993 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:33:36,994 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:33:44,190 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:33:44,190 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:33:55,022 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:33:59,446 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:33:59,447 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:34:10,990 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-10 15:34:10,991 DEBUG   SenderThread:1073050 [sender.py:send():302] send: history
+2025-06-10 15:34:10,992 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:34:10,992 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:34:11,014 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:34:13,015 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:34:14,745 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:34:14,745 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:34:25,233 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:34:29,991 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:34:29,991 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:34:44,251 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: partial_history
+2025-06-10 15:34:44,252 DEBUG   SenderThread:1073050 [sender.py:send():302] send: history
+2025-06-10 15:34:44,253 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:34:44,253 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:34:45,024 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:34:45,302 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: stop_status
+2025-06-10 15:34:45,302 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: stop_status
+2025-06-10 15:34:47,025 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:34:55,458 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:35:00,352 DEBUG   SenderThread:1073050 [sender.py:send():302] send: exit
+2025-06-10 15:35:00,352 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:00,353 INFO    SenderThread:1073050 [sender.py:send_exit():438] handling exit code: 255
+2025-06-10 15:35:00,353 INFO    SenderThread:1073050 [sender.py:send_exit():440] handling runtime: 154
+2025-06-10 15:35:00,356 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:35:00,356 INFO    SenderThread:1073050 [sender.py:send_exit():446] send defer
+2025-06-10 15:35:00,357 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:00,358 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,358 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 0
+2025-06-10 15:35:00,358 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,359 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 0
+2025-06-10 15:35:00,359 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 1
+2025-06-10 15:35:00,359 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,359 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 1
+2025-06-10 15:35:00,419 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,419 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 1
+2025-06-10 15:35:00,419 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 2
+2025-06-10 15:35:00,419 DEBUG   SenderThread:1073050 [sender.py:send():302] send: stats
+2025-06-10 15:35:00,420 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,420 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 2
+2025-06-10 15:35:00,421 DEBUG   SenderThread:1073050 [sender.py:send():302] send: history
+2025-06-10 15:35:00,421 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:35:00,421 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:35:00,422 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,422 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 2
+2025-06-10 15:35:00,422 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 3
+2025-06-10 15:35:00,422 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,422 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 3
+2025-06-10 15:35:00,422 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,423 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 3
+2025-06-10 15:35:00,423 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 4
+2025-06-10 15:35:00,423 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,423 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 4
+2025-06-10 15:35:00,423 DEBUG   SenderThread:1073050 [sender.py:send():302] send: summary
+2025-06-10 15:35:00,424 INFO    SenderThread:1073050 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2025-06-10 15:35:00,424 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,424 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 4
+2025-06-10 15:35:00,424 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 5
+2025-06-10 15:35:00,424 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,424 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 5
+2025-06-10 15:35:00,425 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,425 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 5
+2025-06-10 15:35:00,425 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 6
+2025-06-10 15:35:00,425 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:00,425 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 6
+2025-06-10 15:35:00,425 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:00,425 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 6
+2025-06-10 15:35:00,460 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:01,034 INFO    Thread-12 :1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:35:02,610 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 7
+2025-06-10 15:35:02,610 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:02,611 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:02,611 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 7
+2025-06-10 15:35:02,612 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:02,612 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 7
+2025-06-10 15:35:02,612 INFO    SenderThread:1073050 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-06-10 15:35:02,712 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,035 INFO    SenderThread:1073050 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:35:03,035 INFO    SenderThread:1073050 [dir_watcher.py:finish():392] scan: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files
+2025-06-10 15:35:03,035 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/config.yaml config.yaml
+2025-06-10 15:35:03,035 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log output.log
+2025-06-10 15:35:03,036 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/conda-environment.yaml conda-environment.yaml
+2025-06-10 15:35:03,036 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-metadata.json wandb-metadata.json
+2025-06-10 15:35:03,036 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json wandb-summary.json
+2025-06-10 15:35:03,036 INFO    SenderThread:1073050 [dir_watcher.py:finish():406] scan save: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/requirements.txt requirements.txt
+2025-06-10 15:35:03,036 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 8
+2025-06-10 15:35:03,036 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,048 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:03,048 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 8
+2025-06-10 15:35:03,055 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:03,061 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 8
+2025-06-10 15:35:03,062 INFO    SenderThread:1073050 [file_pusher.py:finish():171] shutting down file pusher
+2025-06-10 15:35:03,162 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,162 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,264 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,264 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,365 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,366 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,467 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,468 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,569 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,569 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,671 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,671 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,691 INFO    Thread-20 :1073050 [upload_job.py:push():138] Uploaded file /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/wandb-summary.json
+2025-06-10 15:35:03,696 INFO    Thread-17 :1073050 [upload_job.py:push():138] Uploaded file /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/config.yaml
+2025-06-10 15:35:03,703 INFO    Thread-18 :1073050 [upload_job.py:push():138] Uploaded file /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/output.log
+2025-06-10 15:35:03,760 INFO    Thread-19 :1073050 [upload_job.py:push():138] Uploaded file /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/conda-environment.yaml
+2025-06-10 15:35:03,773 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,773 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,784 INFO    Thread-21 :1073050 [upload_job.py:push():138] Uploaded file /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/files/requirements.txt
+2025-06-10 15:35:03,875 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,875 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,977 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:03,977 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:03,984 INFO    Thread-11 :1073050 [sender.py:transition_state():459] send defer: 9
+2025-06-10 15:35:03,985 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:03,985 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 9
+2025-06-10 15:35:03,985 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:03,985 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 9
+2025-06-10 15:35:04,079 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:04,622 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 10
+2025-06-10 15:35:04,623 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:04,623 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:04,624 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 10
+2025-06-10 15:35:04,624 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:04,624 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 10
+2025-06-10 15:35:04,625 INFO    SenderThread:1073050 [sender.py:transition_state():459] send defer: 11
+2025-06-10 15:35:04,625 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: defer
+2025-06-10 15:35:04,625 DEBUG   SenderThread:1073050 [sender.py:send():302] send: final
+2025-06-10 15:35:04,626 INFO    HandlerThread:1073050 [handler.py:handle_request_defer():164] handle defer: 11
+2025-06-10 15:35:04,626 DEBUG   SenderThread:1073050 [sender.py:send():302] send: footer
+2025-06-10 15:35:04,626 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: defer
+2025-06-10 15:35:04,626 INFO    SenderThread:1073050 [sender.py:send_request_defer():455] handle sender defer: 11
+2025-06-10 15:35:04,726 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: poll_exit
+2025-06-10 15:35:04,726 DEBUG   SenderThread:1073050 [sender.py:send_request():316] send_request: poll_exit
+2025-06-10 15:35:04,726 INFO    SenderThread:1073050 [file_pusher.py:join():176] waiting for file pusher
+2025-06-10 15:35:05,259 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: sampled_history
+2025-06-10 15:35:05,260 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: get_summary
+2025-06-10 15:35:05,261 INFO    MainThread:1073050 [wandb_run.py:_footer_history_summary_info():3304] rendering history
+2025-06-10 15:35:05,262 INFO    MainThread:1073050 [wandb_run.py:_footer_history_summary_info():3336] rendering summary
+2025-06-10 15:35:05,262 INFO    MainThread:1073050 [wandb_run.py:_footer_sync_info():3260] logging synced files
+2025-06-10 15:35:05,263 DEBUG   HandlerThread:1073050 [handler.py:handle_request():141] handle_request: shutdown
+2025-06-10 15:35:05,263 INFO    HandlerThread:1073050 [handler.py:finish():810] shutting down handler
+2025-06-10 15:35:05,626 INFO    WriterThread:1073050 [datastore.py:close():279] close: /home/kaou-internship/basic_influence_attention/wandb/run-20250610_153225-evpw2y5z/run-evpw2y5z.wandb
+2025-06-10 15:35:06,157 INFO    SenderThread:1073050 [sender.py:finish():1312] shutting down sender
+2025-06-10 15:35:06,157 INFO    SenderThread:1073050 [file_pusher.py:finish():171] shutting down file pusher
+2025-06-10 15:35:06,158 INFO    SenderThread:1073050 [file_pusher.py:join():176] waiting for file pusher
+2025-06-10 15:35:06,265 INFO    MainThread:1073050 [internal.py:handle_exit():80] Internal process exited

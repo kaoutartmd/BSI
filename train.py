@@ -76,7 +76,7 @@ def parse_args():
     parser.add_argument(
         '--wandb-project',
         type=str,
-        default='basic_influence',
+        default='basic_influence_attention',
         help='WandB project name'
     )
     
@@ -121,8 +121,8 @@ def run_experiments(env_name: str, args):
         wandb_entity=args.wandb_entity if hasattr(args, 'wandb_entity') else None
     )
     
-    # Run all experiments
-    results = runner.run_all_experiments()
+    results = runner.run_all_experiments(args.models)  
+
     
     # Analyze results
     analyzer = ExperimentAnalyzer(args.log_dir)
@@ -151,9 +151,27 @@ def analyze_existing(exp_dir: str, args):
 
 
 def main():
-    """Main entry point."""
-    args = parse_args()
-    
+    parser = argparse.ArgumentParser(description='Train social influence models')
+    parser.add_argument('--env', type=str, default='both', 
+                       choices=['harvest', 'cleanup', 'both'],
+                       help='Environment to train on')
+    parser.add_argument('--num-episodes', type=int, default=10000,
+                       help='Number of episodes to train')
+    parser.add_argument('--models', nargs='+', default=['all'], 
+                       choices=['all', 'standard_a3c', 'visible_actions', 'attention_influence'],
+                       help='Which models to run')
+    parser.add_argument('--use-wandb', action='store_true',
+                       help='Use Weights & Biases for logging')
+    parser.add_argument('--device', type=str, default='cpu',
+                       help='Device to use for training (cpu or cuda)')
+    parser.add_argument('--log-dir', type=str, default='./logs',
+                       help='Directory to save logs')
+    parser.add_argument('--analyze-only', type=str, default=None,
+                       help='Path to existing results to analyze instead of training')
+    parser.add_argument('--num-agents', type=int, default=5,
+                       help='Number of agents')
+    args = parser.parse_args()
+
     print("Social Influence in Multi-Agent RL")
     print(f"Device: {args.device}")
     print(f"Log directory: {args.log_dir}")

@@ -1,0 +1,39 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.8.20
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 13
+                - 15
+                - 16
+                - 55
+            "4": 3.8.20
+            "5": 0.20.1
+            "10":
+                - 20
+            "12": 0.20.1
+            "13": linux-x86_64
+curriculum_steps:
+    value: 0
+environment:
+    value: harvest
+influence_weight:
+    value: 0.01
+name:
+    value: attention_w0.01_c0
+num_agents:
+    value: 5
+num_episodes:
+    value: 10000
+seed:
+    value: 0
+use_attention:
+    value: true
+visible_actions:
+    value: false

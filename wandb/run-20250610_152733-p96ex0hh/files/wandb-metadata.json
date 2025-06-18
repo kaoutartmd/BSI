@@ -1,0 +1,28 @@
+{
+    "os": "Linux-6.11.0-26-generic-x86_64-with-glibc2.17",
+    "python": "3.8.20",
+    "heartbeatAt": "2025-06-10T14:27:34.453436",
+    "startedAt": "2025-06-10T14:27:33.575600",
+    "docker": null,
+    "gpu": "NVIDIA RTX A5000",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [
+        "--use-wandb",
+        "--models",
+        "attention_influence"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": null,
+        "commit": "220328306e54c51b93ec9682a99bf4cb5bd9e546"
+    },
+    "email": "kawtarettamadit@gmail.com",
+    "root": "/home/kaou-internship/basic_influence_attention",
+    "host": "kaou-internship-Precision-5820-Tower",
+    "username": "kaou-internship",
+    "executable": "/home/kaou-internship/anaconda3/envs/binf/bin/python"
+}

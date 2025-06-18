@@ -53,7 +53,7 @@ class BaseEnvironment(gym.Env):
         obs_channels = 4  # terrain, resources, agents, self
         self.observation_space = spaces.Box(
             low=0, high=1, 
-            shape=(obs_channels, obs_height, obs_width),
+            shape=(obs_channels, obs_height, obs_width), #(4,7,7)
             dtype=np.float32
         )
         

@@ -31,7 +31,7 @@ TRAINING_CONFIG = {
 # Model configurations
 MODEL_CONFIG = {
     'hidden_dim': 128,
-    'learning_rate': 1e-4,
+    'learning_rate': 1e-8,
     'gamma': 0.99,
     'entropy_coef': 0.01,
     'value_loss_coef': 0.5,
@@ -46,7 +46,7 @@ HYPERPARAM_SEARCH = {
 
 # Experiment configurations
 EXPERIMENT_CONFIG = {
-    'num_seeds': 5,
+    'num_seeds': 2,
     'environments': ['harvest', 'cleanup'],
-    'models': ['standard_a3c', 'visible_actions', 'influence']
+    'models': ['standard_a3c', 'visible_actions', 'attention_influence']
 }

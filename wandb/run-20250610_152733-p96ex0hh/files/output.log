@@ -1,0 +1,30 @@
+
+
+
+
+
+
+
+Training standard_a3c:   0%|                                                                                | 6/10000 [03:39<101:31:44, 36.57s/it, avg_reward=616.00, influence_w=0.000]
+Traceback (most recent call last):
+  File "train.py", line 209, in <module>
+    main()
+  File "train.py", line 188, in main
+    exp_dir = run_experiments('harvest', args)
+  File "train.py", line 124, in run_experiments
+    results = runner.run_all_experiments(args.models)
+  File "/home/kaou-internship/basic_influence_attention/experiments/runner.py", line 277, in run_all_experiments
+    results = self.run_single_experiment(config, seed)
+  File "/home/kaou-internship/basic_influence_attention/experiments/runner.py", line 150, in run_single_experiment
+    reward = model.train_episode()
+  File "/home/kaou-internship/basic_influence_attention/models/attention_influence_a3c.py", line 297, in train_episode
+    self._train_on_batch(experiences, episode_length)
+  File "/home/kaou-internship/basic_influence_attention/models/attention_influence_a3c.py", line 348, in _train_on_batch
+    total_loss.backward()
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/_tensor.py", line 521, in backward
+    torch.autograd.backward(
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/autograd/__init__.py", line 289, in backward
+    _engine_run_backward(
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/autograd/graph.py", line 769, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

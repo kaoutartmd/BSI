@@ -5,13 +5,14 @@ import torch
 import random
 from typing import Dict, List, Optional
 from datetime import datetime
+import pandas as pd
 from tqdm import tqdm
 import wandb
 
 from environments import HarvestEnvironment, CleanupEnvironment
 from models import EnhancedInfluenceA3C, VisibleActionsBaseline
 from utils import MetricsTracker
-
+from models.attention_influence_a3c import AttentionInfluenceA3C
 
 class ExperimentRunner:
     """Main experiment runner with logging and checkpointing."""
@@ -42,7 +43,7 @@ class ExperimentRunner:
         
         # Hyperparameter configurations
         self.configs = self._load_configs()
-        
+    
     def _load_configs(self) -> Dict:
         """Load experiment configurations."""
         return {
@@ -56,10 +57,11 @@ class ExperimentRunner:
                 'curriculum_steps': 0,
                 'visible_actions': True
             },
-            'influence': {
+            'attention_influence': {
                 'influence_weight': [0.01, 0.05, 0.1, 0.25],
                 'curriculum_steps': [0, 2e7, 3.5e8],
-                'visible_actions': False
+                'visible_actions': False,
+                'use_attention': True
             }
         }
     
@@ -119,7 +121,7 @@ class ExperimentRunner:
                 device=self.device
             )
         else:
-            model = EnhancedInfluenceA3C(
+            model = AttentionInfluenceA3C(
                 env=env,
                 num_agents=self.num_agents,
                 state_dim=state_dim,
@@ -256,77 +258,84 @@ class ExperimentRunner:
         
         return len(rewards) * 100
     
-    def run_all_experiments(self) -> Dict:
+    def run_all_experiments(self, models_to_run=None) -> Dict:
         """Run all experiment configurations."""
+        if models_to_run is None:
+            models_to_run = ['all'] 
         all_results = {}
         
         # Standard A3C
-        print(f"\n{'='*60}")
-        print(f"Running Standard A3C experiments for {self.env_name}")
-        print(f"{'='*60}")
-        
-        standard_results = []
-        for seed in range(5):
-            config = self.configs['standard_a3c'].copy()
-            config['name'] = 'standard_a3c'
-            results = self.run_single_experiment(config, seed)
-            standard_results.append(results)
-        all_results['standard_a3c'] = standard_results
+        if 'all' in models_to_run or 'standard_a3c' in models_to_run:
+            print(f"\n{'='*60}")
+            print(f"Running Standard A3C baseline for {self.env_name}")
+            print(f"{'='*60}")
+            
+            standard_results = []
+            for seed in range(5):
+                config = self.configs['standard_a3c'].copy()
+                config['name'] = 'standard_a3c'
+                results = self.run_single_experiment(config, seed)
+                standard_results.append(results)
+            all_results['standard_a3c'] = standard_results
         
         # Visible Actions Baseline
-        print(f"\n{'='*60}")
-        print(f"Running Visible Actions experiments for {self.env_name}")
-        print(f"{'='*60}")
+        if 'all' in models_to_run or 'visible_actions' in models_to_run:
+            print(f"\n{'='*60}")
+            print(f"Running Visible Actions baseline for {self.env_name}")
+            print(f"{'='*60}")
+            
+            visible_results = []
+            for seed in range(5):
+                config = self.configs['visible_actions'].copy()
+                config['name'] = 'visible_actions'
+                results = self.run_single_experiment(config, seed)
+                visible_results.append(results)
+            all_results['visible_actions'] = visible_results
         
-        visible_results = []
-        for seed in range(5):
-            config = self.configs['visible_actions'].copy()
-            config['name'] = 'visible_actions'
-            results = self.run_single_experiment(config, seed)
-            visible_results.append(results)
-        all_results['visible_actions'] = visible_results
-        
-        # Influence models with hyperparameter search
-        print(f"\n{'='*60}")
-        print(f"Running Influence experiments for {self.env_name}")
-        print(f"{'='*60}")
-        
-        influence_results = []
-        best_config = None
-        best_performance = -float('inf')
-        
-        for influence_weight in self.configs['influence']['influence_weight']:
-            for curriculum_steps in self.configs['influence']['curriculum_steps']:
-                config_results = []
-                
-                print(f"\nTesting influence_weight={influence_weight}, "
-                      f"curriculum_steps={curriculum_steps:.1e}")
-                
-                for seed in range(5):
-                    config = {
-                        'influence_weight': influence_weight,
-                        'curriculum_steps': curriculum_steps,
-                        'visible_actions': False,
-                        'name': f'influence_w{influence_weight}_c{curriculum_steps}'
-                    }
+        # Attention-Influence models
+        if 'all' in models_to_run or 'attention_influence' in models_to_run:
+            print(f"\n{'='*60}")
+            print(f"Running Attention-Influence experiments for {self.env_name}")
+            print(f"{'='*60}")
+            
+            influence_results = []
+            best_config = None
+            best_performance = -float('inf')
+            
+            for influence_weight in self.configs['attention_influence']['influence_weight']:
+                for curriculum_steps in self.configs['attention_influence']['curriculum_steps']:
+                    config_results = []
                     
-                    results = self.run_single_experiment(config, seed)
-                    config_results.append(results)
+                    print(f"\nTesting influence_weight={influence_weight}, "
+                          f"curriculum_steps={curriculum_steps:.1e}")
                     
-                    # Track best configuration
-                    if results['collective_rewards']:
-                        avg_performance = np.mean(results['collective_rewards'][-10:])
-                        if avg_performance > best_performance:
-                            best_performance = avg_performance
-                            best_config = config
-                
-                influence_results.append({
-                    'config': config,
-                    'results': config_results
-                })
-        
-        all_results['influence'] = influence_results
-        all_results['best_influence_config'] = best_config
+                    for seed in range(5):
+                        config = {
+                            'influence_weight': influence_weight,
+                            'curriculum_steps': curriculum_steps,
+                            'visible_actions': False,
+                            'use_attention': True,
+                            'name': f'attention_w{influence_weight}_c{curriculum_steps}'
+                        }
+                        
+                        results = self.run_single_experiment(config, seed)
+                        config_results.append(results)
+                        
+                        # Track best configuration
+                        if results['collective_rewards']:
+                            avg_performance = np.mean(results['collective_rewards'][-10:])
+                            if avg_performance > best_performance:
+                                best_performance = avg_performance
+                                best_config = config
+                    
+                    influence_results.append({
+                        'config': config,
+                        'results': config_results
+                    })
+            
+            all_results['attention_influence'] = influence_results
+            if best_config:
+                all_results['best_influence_config'] = best_config
         
         # Save all results
         results_path = os.path.join(self.exp_dir, "all_results.json")
@@ -338,7 +347,6 @@ class ExperimentRunner:
             self._create_wandb_summary(all_results)
         
         print(f"\nExperiments completed! Results saved to: {self.exp_dir}")
-        print(f"Best influence configuration: {best_config}")
         
         return all_results
     
@@ -378,7 +386,7 @@ class ExperimentRunner:
         # Best Influence
         if 'best_influence_config' in all_results and all_results['best_influence_config']:
             best_config = all_results['best_influence_config']
-            for influence_data in all_results.get('influence', []):
+            for influence_data in all_results.get('attention_influence', []):
                 if influence_data['config'] == best_config:
                     for result in influence_data['results']:
                         if result['collective_rewards']:

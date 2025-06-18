@@ -1,0 +1,49 @@
+{
+  "os": "Linux-6.11.0-26-generic-x86_64-with-glibc2.17",
+  "python": "CPython 3.8.20",
+  "startedAt": "2025-06-11T08:56:55.822162Z",
+  "args": [
+    "--use-wandb",
+    "--env",
+    "harvest",
+    "--models",
+    "attention_influence"
+  ],
+  "program": "train.py",
+  "codePath": "train.py",
+  "git": {
+    "commit": "220328306e54c51b93ec9682a99bf4cb5bd9e546"
+  },
+  "email": "kaoutar.et-tamadit@uit.ac.ma",
+  "root": "/home/kaou-internship/basic_influence_attention",
+  "host": "kaou-internship-Precision-5820-Tower",
+  "executable": "/home/kaou-internship/anaconda3/envs/binf/bin/python",
+  "codePathLocal": "train.py",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA RTX A5000",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "252841140224",
+      "used": "167267708928"
+    }
+  },
+  "memory": {
+    "total": "33323393024"
+  },
+  "cpu": {
+    "count": 6,
+    "countLogical": 12
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA RTX A5000",
+      "memoryTotal": "25757220864",
+      "cudaCores": 8192,
+      "architecture": "Ampere",
+      "uuid": "GPU-7bb78ab5-05d4-00c1-77b0-6181b081e7cb"
+    }
+  ],
+  "cudaVersion": "12.2"
+}

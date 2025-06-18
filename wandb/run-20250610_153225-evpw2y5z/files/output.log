@@ -1,0 +1,28 @@
+
+
+
+
+
+Training standard_a3c:   0%|                                                                                | 4/10000 [02:31<105:25:31, 37.97s/it, avg_reward=616.00, influence_w=0.000]
+Traceback (most recent call last):
+  File "train.py", line 209, in <module>
+    main()
+  File "train.py", line 188, in main
+    exp_dir = run_experiments('harvest', args)
+  File "train.py", line 124, in run_experiments
+    results = runner.run_all_experiments(args.models)
+  File "/home/kaou-internship/basic_influence_attention/experiments/runner.py", line 277, in run_all_experiments
+    results = self.run_single_experiment(config, seed)
+  File "/home/kaou-internship/basic_influence_attention/experiments/runner.py", line 150, in run_single_experiment
+    reward = model.train_episode()
+  File "/home/kaou-internship/basic_influence_attention/models/attention_influence_a3c.py", line 249, in train_episode
+    probs, value, attention_weights = self.agents[i](
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1553, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1562, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/kaou-internship/basic_influence_attention/models/attention_influence_a3c.py", line 90, in forward
+    x = F.relu(self.fc1(x))
+  File "/home/kaou-internship/anaconda3/envs/binf/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1717, in __getattr__
+    if '_parameters' in self.__dict__:
+KeyboardInterrupt
